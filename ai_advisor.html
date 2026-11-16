@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Advisor | Zero to Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<header class="app-header">
+    <a href="dashboard.html" class="app-logo">Zero <span>to Hero</span></a>
+    <nav class="app-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="studyplan.html">Study Planner</a>
+        <a href="ai_advisor.html" class="active">AI Advisor</a>
+    </nav>
+    <a href="profile.html" class="header-profile">My Profile</a>
+</header>
+
+<main class="page-container">
+
+    <section class="welcome-banner ai-banner">
+        <div>
+            <span class="eyebrow">YOUR PERSONAL LEARNING ASSISTANT</span>
+            <h1>Meet Your AI Study Advisor 🤖</h1>
+            <p>Get guidance, discover learning strategies and improve your study routine.</p>
+        </div>
+        <div class="banner-icon">✨</div>
+    </section>
+
+    <div class="ai-layout">
+
+        <section class="content-card ai-chat-card">
+
+            <div class="ai-chat-header">
+                <div class="ai-avatar">🤖</div>
+                <div>
+                    <h2>HeroMate AI</h2>
+                    <p><span class="online-dot"></span> Your study assistant</p>
+                </div>
+                <span class="ai-label">AI ASSISTANT</span>
+            </div>
+
+            <div class="chat-area">
+
+                <div class="chat-message assistant-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <strong>HeroMate AI</strong>
+                        <p>
+                            Hello! Welcome to your personal study space.
+                            I can help you plan your studies, understand topics
+                            and identify ways to improve your academic performance.
+                            What would you like help with today?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="suggestion-heading">Try asking about:</div>
+
+                <div class="suggestion-list">
+                    <div class="suggestion-item">📚 How can I improve my study routine?</div>
+                    <div class="suggestion-item">📊 How should I improve my weak subjects?</div>
+                    <div class="suggestion-item">⏰ Create a daily study schedule for me.</div>
+                    <div class="suggestion-item">🎯 How can I prepare for my examinations?</div>
+                </div>
+
+                <div class="chat-message user-message">
+                    <div class="message-content">
+                        <strong>You</strong>
+                        <p>How can I become more consistent with studying?</p>
+                    </div>
+                    <div class="message-avatar user-avatar">👤</div>
+                </div>
+
+                <div class="chat-message assistant-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <strong>HeroMate AI</strong>
+                        <p>
+                            Start with a realistic daily target. Choose two
+                            important topics, study in focused sessions,
+                            take short breaks and review what you learned
+                            at the end of the day.
+                        </p>
+                        <p>
+                            Remember: consistency is more important than
+                            studying for very long hours occasionally.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <form class="chat-input-area" action="#" method="post">
+                <input type="text" name="message"
+                    placeholder="Ask your study-related question..."
+                    aria-label="Type your question">
+                <button type="submit" class="primary-btn">Send ➤</button>
+            </form>
+
+            <p class="chat-note">
+                Demo conversation shown. Live AI responses will be connected
+                through the Python backend.
+            </p>
+
+        </section>
+
+        <aside class="ai-sidebar">
+
+            <div class="content-card">
+                <span class="section-tag">QUICK TOOLS</span>
+                <h3>Study Assistance</h3>
+
+                <a href="studyplan.html" class="ai-tool-link">
+                    <span>📅</span>
+                    <div>
+                        <strong>Study Planner</strong>
+                        <small>Organize your study routine</small>
+                    </div>
+                </a>
+
+                <a href="performance.html" class="ai-tool-link">
+                    <span>📈</span>
+                    <div>
+                        <strong>Performance Analysis</strong>
+                        <small>Review your academic progress</small>
+                    </div>
+                </a>
+
+                <a href="subjects.html" class="ai-tool-link">
+                    <span>📖</span>
+                    <div>
+                        <strong>My Subjects</strong>
+                        <small>Explore your learning subjects</small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="content-card tip-card">
+                <div class="tip-icon">💡</div>
+                <h3>Daily Learning Tip</h3>
+                <p>
+                    Revise what you studied yesterday before starting
+                    a completely new topic. Regular revision helps
+                    strengthen your understanding.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <span class="section-tag">REMEMBER</span>
+                <h3>Your AI Learning Partner</h3>
+                <p class="muted-text">
+                    AI suggestions are meant to support your learning.
+                    Always verify important academic information with
+                    your teachers and official study materials.
+                </p>
+            </div>
+
+        </aside>
+
+    </div>
+
+</main>
+
+<footer class="app-footer">
+    <p>© 2026 Zero to Hero. Learn smarter, achieve more.</p>
+</footer>
+
+</body>
+</html>

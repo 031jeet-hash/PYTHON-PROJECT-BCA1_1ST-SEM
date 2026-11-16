@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Zero to Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<header class="app-header">
+    <a href="admin_dashboard.html" class="app-logo">Zero <span>to Hero</span></a>
+    <nav class="app-nav">
+        <a href="admin_dashboard.html" class="active">Overview</a>
+        <a href="manage_users.html">Manage Users</a>
+        <a href="performance.html">Performance</a>
+        <a href="setting.html">Settings</a>
+    </nav>
+    <a href="profile.html" class="header-profile">Admin Profile</a>
+</header>
+
+<main class="page-container">
+
+    <section class="welcome-banner admin-banner">
+        <div>
+            <span class="eyebrow">ADMINISTRATION PANEL</span>
+            <h1>Welcome, Administrator 👋</h1>
+            <p>Manage your institution, users and academic activities from one place.</p>
+        </div>
+        <div class="banner-icon">🛡️</div>
+    </section>
+
+    <section class="content-card institution-card">
+        <span class="section-tag">INSTITUTION INFORMATION</span>
+        <h2>Institution Setup</h2>
+        <p>Configure your institution details for the platform.</p>
+
+        <div class="institution-details">
+            <div>
+                <small>Institution Name</small>
+                <strong>Not configured yet</strong>
+            </div>
+            <div>
+                <small>Affiliated University</small>
+                <strong>Not configured yet</strong>
+            </div>
+        </div>
+
+        <p class="helper-text">
+            Institution details will appear here after administrator setup.
+        </p>
+        <a href="setting.html" class="primary-btn">Configure Institution</a>
+    </section>
+
+    <section class="section-block">
+        <div class="section-heading-row">
+            <div>
+                <span class="section-tag">OVERVIEW</span>
+                <h2>Platform Statistics</h2>
+            </div>
+            <span class="status-pill">Demo Data</span>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-top">
+                    <span>Total Students</span>
+                    <span class="stat-icon blue">👨‍🎓</span>
+                </div>
+                <h2>250</h2>
+                <p>Sample student records</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <span>Total Teachers</span>
+                    <span class="stat-icon green">👩‍🏫</span>
+                </div>
+                <h2>18</h2>
+                <p>Sample teacher accounts</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <span>Active Courses</span>
+                    <span class="stat-icon purple">📚</span>
+                </div>
+                <h2>6</h2>
+                <p>Academic programmes</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <span>Average Performance</span>
+                    <span class="stat-icon orange">📈</span>
+                </div>
+                <h2>78%</h2>
+                <p>Sample academic average</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block">
+        <div class="section-heading-row">
+            <div>
+                <span class="section-tag">MANAGEMENT</span>
+                <h2>Quick Administration</h2>
+            </div>
+        </div>
+
+        <div class="admin-action-grid">
+            <a href="manage_users.html" class="admin-action-card">
+                <div class="action-icon">👥</div>
+                <h3>Manage Users</h3>
+                <p>Create and manage student and teacher accounts.</p>
+                <span>Open Management →</span>
+            </a>
+
+            <a href="student_directory.html" class="admin-action-card">
+                <div class="action-icon">🎓</div>
+                <h3>Student Directory</h3>
+                <p>View student information and academic records.</p>
+                <span>View Students →</span>
+            </a>
+
+            <a href="performance.html" class="admin-action-card">
+                <div class="action-icon">📊</div>
+                <h3>Performance Reports</h3>
+                <p>Review academic performance and progress.</p>
+                <span>View Reports →</span>
+            </a>
+
+            <a href="setting.html" class="admin-action-card">
+                <div class="action-icon">⚙️</div>
+                <h3>Platform Settings</h3>
+                <p>Manage institution configuration and preferences.</p>
+                <span>Open Settings →</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="content-card">
+        <span class="section-tag">RECENT ACTIVITY</span>
+        <h2>Platform Activity</h2>
+
+        <div class="activity-list">
+            <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                    <strong>Student Management</strong>
+                    <p>Student account management is available.</p>
+                </div>
+                <small>System</small>
+            </div>
+
+            <div class="activity-item">
+                <span class="activity-dot green-dot"></span>
+                <div>
+                    <strong>Teacher Management</strong>
+                    <p>Teacher account management is available.</p>
+                </div>
+                <small>System</small>
+            </div>
+
+            <div class="activity-item">
+                <span class="activity-dot purple-dot"></span>
+                <div>
+                    <strong>Institution Setup</strong>
+                    <p>Complete your institution profile to get started.</p>
+                </div>
+                <small>System</small>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="app-footer">
+    <p>© 2026 Zero to Hero | Administrator Panel</p>
+</footer>
+
+</body>
+</html>

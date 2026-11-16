@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Directory | Zero to Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="teacher.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<header class="app-header">
+    <a href="teacher_dashboard.html" class="app-logo">Zero <span>to Hero</span></a>
+    <nav class="app-nav">
+        <a href="teacher_dashboard.html">Dashboard</a>
+        <a href="student_directory.html" class="active">Students</a>
+        <a href="performance.html">Performance</a>
+    </nav>
+    <a href="profile.html" class="header-profile">Teacher Profile</a>
+</header>
+
+<main class="page-container">
+
+    <section class="welcome-banner teacher-banner">
+        <div>
+            <span class="eyebrow">STUDENT MANAGEMENT</span>
+            <h1>Student Directory 👥</h1>
+            <p>View and review the students assigned to your academic group.</p>
+        </div>
+        <div class="banner-icon">📋</div>
+    </section>
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Assigned Students</span>
+                <span class="stat-icon blue">🎓</span>
+            </div>
+            <h2>45</h2>
+            <p>Sample assigned records</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Active Students</span>
+                <span class="stat-icon green">✅</span>
+            </div>
+            <h2>42</h2>
+            <p>Sample active records</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Needs Attention</span>
+                <span class="stat-icon orange">⚠️</span>
+            </div>
+            <h2>03</h2>
+            <p>Sample students requiring support</p>
+        </div>
+
+    </section>
+
+    <section class="content-card">
+
+        <div class="section-heading-row">
+            <div>
+                <span class="section-tag">STUDENT RECORDS</span>
+                <h2>My Students</h2>
+                <p>Sample directory for frontend demonstration.</p>
+            </div>
+        </div>
+
+        <form class="directory-filter" action="#" method="get">
+
+            <div class="form-group">
+                <label for="search-student">Search Student</label>
+                <input type="search" id="search-student"
+                    name="search"
+                    placeholder="Search by name or student ID">
+            </div>
+
+            <div class="form-group">
+                <label for="filter-course">Course</label>
+                <select id="filter-course" name="course">
+                    <option value="">All Courses</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="BSc CS">BSc CS</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="filter-semester">Semester</label>
+                <select id="filter-semester" name="semester">
+                    <option value="">All Semesters</option>
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                </select>
+            </div>
+
+            <button type="submit" class="primary-btn">Search</button>
+
+        </form>
+
+        <div class="table-wrapper">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Course</th>
+                        <th>Semester</th>
+                        <th>Performance</th>
+                        <th>Status</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Rahul Sharma</td>
+                        <td>STU001</td>
+                        <td>BCA</td>
+                        <td>1</td>
+                        <td>78%</td>
+                        <td><span class="table-status active-status">Active</span></td>
+                        <td><a href="student_details.html" class="text-link">View →</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Priya Das</td>
+                        <td>STU002</td>
+                        <td>BBA</td>
+                        <td>1</td>
+                        <td>88%</td>
+                        <td><span class="table-status active-status">Active</span></td>
+                        <td><a href="student_details.html" class="text-link">View →</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Aman Patel</td>
+                        <td>STU003</td>
+                        <td>BCA</td>
+                        <td>1</td>
+                        <td>61%</td>
+                        <td><span class="table-status pending-status">Needs Attention</span></td>
+                        <td><a href="student_details.html" class="text-link">View →</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Neha Singh</td>
+                        <td>STU004</td>
+                        <td>BSc CS</td>
+                        <td>2</td>
+                        <td>91%</td>
+                        <td><span class="table-status active-status">Active</span></td>
+                        <td><a href="student_details.html" class="text-link">View →</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Arjun Das</td>
+                        <td>STU005</td>
+                        <td>BCA</td>
+                        <td>1</td>
+                        <td>72%</td>
+                        <td><span class="table-status active-status">Active</span></td>
+                        <td><a href="student_details.html" class="text-link">View →</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <p class="helper-text">
+        Search and filtering will become functional when connected to Python.
+    </p>
+
+</main>
+
+<footer class="app-footer">
+    <p>© 2026 Zero to Hero | Student Directory</p>
+</footer>
+
+</body>
+</html>

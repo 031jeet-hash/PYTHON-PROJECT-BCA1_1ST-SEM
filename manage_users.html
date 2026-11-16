@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users | Zero to Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<header class="app-header">
+    <a href="admin_dashboard.html" class="app-logo">Zero <span>to Hero</span></a>
+    <nav class="app-nav">
+        <a href="admin_dashboard.html">Overview</a>
+        <a href="manage_users.html" class="active">Manage Users</a>
+        <a href="student_directory.html">Students</a>
+        <a href="setting.html">Settings</a>
+    </nav>
+    <a href="profile.html" class="header-profile">Admin Profile</a>
+</header>
+
+<main class="page-container">
+
+    <section class="welcome-banner">
+        <div>
+            <span class="eyebrow">USER ADMINISTRATION</span>
+            <h1>Manage Users 👥</h1>
+            <p>Organize teacher and student accounts within your institution.</p>
+        </div>
+        <div class="banner-icon">🛡️</div>
+    </section>
+
+    <section class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Total Users</span>
+                <span class="stat-icon blue">👥</span>
+            </div>
+            <h2>268</h2>
+            <p>Sample user records</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Students</span>
+                <span class="stat-icon green">🎓</span>
+            </div>
+            <h2>250</h2>
+            <p>Sample student records</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Teachers</span>
+                <span class="stat-icon purple">👩‍🏫</span>
+            </div>
+            <h2>18</h2>
+            <p>Sample teacher records</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Pending Accounts</span>
+                <span class="stat-icon orange">⌛</span>
+            </div>
+            <h2>05</h2>
+            <p>Sample pending records</p>
+        </div>
+    </section>
+
+    <section class="content-card">
+        <div class="section-heading-row">
+            <div>
+                <span class="section-tag">ACCOUNT CREATION</span>
+                <h2>Add New User</h2>
+                <p>Create a teacher or student account.</p>
+            </div>
+        </div>
+
+        <form class="user-form" action="#" method="post">
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname"
+                        placeholder="Enter full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Enter email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">User Role</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select role</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course / Department</label>
+                    <input type="text" id="course" name="course"
+                        placeholder="Example: BCA">
+                </div>
+
+                <div class="form-group">
+                    <label for="user-id">Registration / Employee ID</label>
+                    <input type="text" id="user-id" name="user_id"
+                        placeholder="Enter ID">
+                </div>
+
+                <div class="form-group">
+                    <label for="semester">Semester / Assignment</label>
+                    <input type="text" id="semester" name="semester"
+                        placeholder="Example: Semester 1">
+                </div>
+            </div>
+
+            <button type="submit" class="primary-btn">Create User Account</button>
+        </form>
+        <p class="helper-text">
+            This form is a frontend preview. Account creation will be enabled
+            through the Python backend.
+        </p>
+    </section>
+
+    <section class="content-card">
+        <div class="section-heading-row">
+            <div>
+                <span class="section-tag">USER DIRECTORY</span>
+                <h2>Recently Added Users</h2>
+            </div>
+            <a href="student_directory.html" class="primary-btn">View Directory</a>
+        </div>
+
+        <div class="table-wrapper">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>User ID</th>
+                        <th>Role</th>
+                        <th>Course</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Rahul Sharma</td>
+                        <td>STU001</td>
+                        <td>Student</td>
+                        <td>BCA</td>
+                        <td><span class="table-status active-status">Active</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Priya Das</td>
+                        <td>STU002</td>
+                        <td>Student</td>
+                        <td>BBA</td>
+                        <td><span class="table-status active-status">Active</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Amit Kumar</td>
+                        <td>TCH001</td>
+                        <td>Teacher</td>
+                        <td>Computer Science</td>
+                        <td><span class="table-status active-status">Active</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Neha Patel</td>
+                        <td>STU003</td>
+                        <td>Student</td>
+                        <td>BSc CS</td>
+                        <td><span class="table-status pending-status">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="helper-text">Sample records for design preview only.</p>
+    </section>
+
+</main>
+
+<footer class="app-footer">
+    <p>© 2026 Zero to Hero | User Administration</p>
+</footer>
+
+</body>
+</html>

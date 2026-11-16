@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner | Zero to Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<header class="app-header">
+    <a href="dashboard.html" class="app-logo">Zero <span>to Hero</span></a>
+    <nav class="app-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="studyplan.html" class="active">Study Plan</a>
+        <a href="ai_advisor.html">AI Advisor</a>
+    </nav>
+    <a href="profile.html" class="header-profile">My Profile</a>
+</header>
+
+<main class="page-container">
+
+    <section class="welcome-banner">
+        <div>
+            <span class="eyebrow">SMART LEARNING ORGANIZATION</span>
+            <h1>My Study Planner 📅</h1>
+            <p>Build a balanced study routine and stay consistent with your goals.</p>
+        </div>
+        <div class="banner-icon">⏰</div>
+    </section>
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Weekly Study Goal</span>
+                <span class="stat-icon blue">🎯</span>
+            </div>
+            <h2>25 Hrs</h2>
+            <p>Sample weekly target</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Completed</span>
+                <span class="stat-icon green">✅</span>
+            </div>
+            <h2>16 Hrs</h2>
+            <p>Sample completed hours</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Pending Tasks</span>
+                <span class="stat-icon purple">📌</span>
+            </div>
+            <h2>05</h2>
+            <p>Sample pending tasks</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Daily Streak</span>
+                <span class="stat-icon orange">🔥</span>
+            </div>
+            <h2>04 Days</h2>
+            <p>Sample study streak</p>
+        </div>
+
+    </section>
+
+    <section class="content-card">
+        <span class="section-tag">WEEKLY PROGRESS</span>
+        <h2>Your Study Goal</h2>
+
+        <div class="performance-info">
+            <strong>16 of 25 study hours completed</strong>
+            <span>64%</span>
+        </div>
+
+        <div class="progress-track">
+            <div class="progress-fill green-fill" style="width:64%"></div>
+        </div>
+
+        <p class="helper-text">
+            Sample progress indicator. Your actual study hours will be tracked by the backend.
+        </p>
+    </section>
+
+    <section class="content-card">
+        <div class="section-heading-row">
+            <div>
+                <span class="section-tag">DAILY ROUTINE</span>
+                <h2>Suggested Study Schedule</h2>
+            </div>
+            <span class="status-pill">Sample Plan</span>
+        </div>
+
+        <div class="schedule-list">
+
+            <div class="schedule-item">
+                <div class="schedule-time">07:00 AM</div>
+                <div class="schedule-content">
+                    <strong>Morning Revision</strong>
+                    <p>Review important concepts from previous lessons.</p>
+                </div>
+                <span class="schedule-category blue-category">Revision</span>
+            </div>
+
+            <div class="schedule-item">
+                <div class="schedule-time">04:00 PM</div>
+                <div class="schedule-content">
+                    <strong>Programming Practice</strong>
+                    <p>Practice C or Python programming problems.</p>
+                </div>
+                <span class="schedule-category green-category">Practice</span>
+            </div>
+
+            <div class="schedule-item">
+                <div class="schedule-time">05:30 PM</div>
+                <div class="schedule-content">
+                    <strong>Core Subject Study</strong>
+                    <p>Study a difficult topic and make short notes.</p>
+                </div>
+                <span class="schedule-category purple-category">Learning</span>
+            </div>
+
+            <div class="schedule-item">
+                <div class="schedule-time">08:00 PM</div>
+                <div class="schedule-content">
+                    <strong>Daily Review</strong>
+                    <p>Revise the topics covered during the day.</p>
+                </div>
+                <span class="schedule-category orange-category">Review</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="content-card">
+        <span class="section-tag">STUDY TASKS</span>
+        <h2>My Learning Checklist</h2>
+
+        <div class="task-list">
+
+            <div class="task-item">
+                <div>
+                    <strong>Revise Python conditional statements</strong>
+                    <small>Programming | High Priority</small>
+                </div>
+                <span class="task-done">Completed</span>
+            </div>
+
+            <div class="task-item">
+                <div>
+                    <strong>Practice C programming questions</strong>
+                    <small>Programming | High Priority</small>
+                </div>
+                <span class="task-pending">Pending</span>
+            </div>
+
+            <div class="task-item">
+                <div>
+                    <strong>Revise Boolean algebra</strong>
+                    <small>Digital Logic | Medium Priority</small>
+                </div>
+                <span class="task-pending">Pending</span>
+            </div>
+
+            <div class="task-item">
+                <div>
+                    <strong>Review computer fundamentals</strong>
+                    <small>Computer Fundamentals | Medium Priority</small>
+                </div>
+                <span class="task-done">Completed</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="content-card">
+        <span class="section-tag">PERSONALIZED GUIDANCE</span>
+        <h2>Need Help Planning Your Studies?</h2>
+        <p>
+            Get suggestions based on your academic performance,
+            learning goals and areas that need improvement.
+        </p>
+        <br>
+        <a href="ai_advisor.html" class="primary-btn">Ask HeroMate AI →</a>
+    </section>
+
+    <p class="helper-text">
+        The schedule and tasks are sample entries. Actual study planning
+        will be connected to the Python backend.
+    </p>
+
+</main>
+
+<footer class="app-footer">
+    <p>© 2026 Zero to Hero | Smart Study Planner</p>
+</footer>
+
+</body>
+</html>

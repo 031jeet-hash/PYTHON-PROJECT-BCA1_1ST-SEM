@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details | Zero to Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="teacher.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<header class="app-header">
+    <a href="teacher_dashboard.html" class="app-logo">Zero <span>to Hero</span></a>
+    <nav class="app-nav">
+        <a href="teacher_dashboard.html">Dashboard</a>
+        <a href="student_directory.html">Student Directory</a>
+        <a href="student_details.html" class="active">Student Details</a>
+    </nav>
+    <a href="profile.html" class="header-profile">Teacher Profile</a>
+</header>
+
+<main class="page-container">
+
+    <section class="welcome-banner teacher-banner">
+        <div>
+            <span class="eyebrow">STUDENT INFORMATION</span>
+            <h1>Student Details 🎓</h1>
+            <p>Review student profiles and academic information.</p>
+        </div>
+        <div class="banner-icon">👨‍🎓</div>
+    </section>
+
+    <section class="content-card student-profile-card">
+
+        <div class="student-profile-header">
+            <div class="student-avatar">👨‍🎓</div>
+            <div>
+                <span class="section-tag">STUDENT RECORD</span>
+                <h2>Rahul Sharma</h2>
+                <p>Student ID: STU001</p>
+                <span class="student-status">Active Student</span>
+            </div>
+        </div>
+
+        <div class="teacher-detail-grid">
+
+            <div class="detail-box">
+                <small>Full Name</small>
+                <strong>Rahul Sharma</strong>
+            </div>
+
+            <div class="detail-box">
+                <small>Email</small>
+                <strong>rahul@example.com</strong>
+            </div>
+
+            <div class="detail-box">
+                <small>Course</small>
+                <strong>BCA</strong>
+            </div>
+
+            <div class="detail-box">
+                <small>Semester</small>
+                <strong>Semester 1</strong>
+            </div>
+
+            <div class="detail-box">
+                <small>Institution</small>
+                <strong>Institution Name</strong>
+            </div>
+
+            <div class="detail-box">
+                <small>University</small>
+                <strong>Affiliated University</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Overall Score</span>
+                <span class="stat-icon blue">📊</span>
+            </div>
+            <h2>78%</h2>
+            <p>Sample academic score</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Attendance</span>
+                <span class="stat-icon green">📅</span>
+            </div>
+            <h2>85%</h2>
+            <p>Sample attendance</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <span>Subjects</span>
+                <span class="stat-icon purple">📚</span>
+            </div>
+            <h2>06</h2>
+            <p>Registered subjects</p>
+        </div>
+
+    </section>
+
+    <section class="content-card">
+        <span class="section-tag">ACADEMIC RECORD</span>
+        <h2>Subject Performance</h2>
+
+        <div class="table-wrapper">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Maximum Marks</th>
+                        <th>Percentage</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python Programming</td>
+                        <td>46</td>
+                        <td>50</td>
+                        <td>92%</td>
+                        <td><span class="table-status active-status">Good</span></td>
+                    </tr>
+                    <tr>
+                        <td>C Programming</td>
+                        <td>41</td>
+                        <td>50</td>
+                        <td>82%</td>
+                        <td><span class="table-status active-status">Good</span></td>
+                    </tr>
+                    <tr>
+                        <td>Digital Logic</td>
+                        <td>37</td>
+                        <td>50</td>
+                        <td>74%</td>
+                        <td><span class="table-status pending-status">Average</span></td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>34</td>
+                        <td>50</td>
+                        <td>68%</td>
+                        <td><span class="table-status pending-status">Needs Focus</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="content-card">
+        <span class="section-tag">TEACHER OBSERVATION</span>
+        <h2>Academic Remarks</h2>
+        <p>
+            The student demonstrates good progress in programming subjects.
+            Additional practice in Mathematics may help improve overall performance.
+        </p>
+    </section>
+
+    <p class="helper-text">
+        Student information and marks shown above are sample data.
+    </p>
+
+</main>
+
+<footer class="app-footer">
+    <p>© 2026 Zero to Hero | Student Details</p>
+</footer>
+
+</body>
+</html>
